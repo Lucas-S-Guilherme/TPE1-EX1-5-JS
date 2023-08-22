@@ -21,4 +21,11 @@ const Abastecimento = require('./ex4');
 // inserit tipo de Combustível (g = gasolina, a = Alcool - E quantidade)
 Abastecimento('g', 10);
 
+console.log("\n\n**********_____ Exercício 05 _____********** ");
+const PromocaoCarne = require('./ex5');
+//inserir tipo carne (File duplo, Alcatra ou Picanha), quantidade de carne, tipo pagamento (Cartao Assai ou outros)
+
+PromocaoCarne('File Duplo', 5.1, 'Cartao Assai');
+
+
 
