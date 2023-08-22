@@ -4,37 +4,43 @@
     
 //     Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90
 
-let gasolina = 2.5;
-let alcool = 1.9;
+module.exports = Abastecimento;
+function Abastecimento(tipoCombustivel, quantidadeCombustivel){
 
-let tipoCombustivel = "g";
-let quantidadeCombustivel = 19;
-
-console.log(``)
-
-switch (tipoCombustivel){
-    case "a":
-        if(quantidadeCombustivel <= 20){
-            alcool *= 0.97;
-            console.log(`Abastecido ${quantidadeCombustivel} Litros de Álcool 
-            \nO valor a ser pago é de R$${quantidadeCombustivel * alcool}`);
-        }
-        else {
-            alcool *= 0.95;
-            console.log(`Abastecido ${quantidadeCombustivel} Litros de Álcool 
-            \n O valor a ser pago é de R$${quantidadeCombustivel * alcool}`)}
-        break;
+    let gasolina = 2.5;
+    let alcool = 1.9;
     
-    case "g":
-        if(quantidadeCombustivel <= 20){
-            gasolina *= 0.96;
-            console.log(`Abastecido ${quantidadeCombustivel} Litros de Gasolina 
-            \n O valor a ser pago é de R$${quantidadeCombustivel * gasolina}`);
-        }
-        else {
-            gasolina *= 0.94;
-            console.log(`Abastecido ${quantidadeCombustivel} Litros de Gasolina
-            \n O valor a ser pago é de R$${quantidadeCombustivel * gasolina}`)}
-        break;
+    
+    console.log(``)
+    
+    switch (tipoCombustivel){
+        case "a":
+            if(quantidadeCombustivel <= 20){
+                alcool *= 0.97;
+                console.log(`Abastecido ${quantidadeCombustivel} Litros de Álcool 
+                \nO valor a ser pago é de R$${quantidadeCombustivel * alcool}`);
+            }
+            else {
+                alcool *= 0.95;
+                console.log(`Abastecido ${quantidadeCombustivel} Litros de Álcool 
+                \n O valor a ser pago é de R$${quantidadeCombustivel * alcool}`)}
+            break;
+        
+        case "g":
+            if(quantidadeCombustivel <= 20){
+                gasolina *= 0.96;
+                console.log(`Abastecido ${quantidadeCombustivel} Litros de Gasolina 
+                \n O valor a ser pago é de R$${quantidadeCombustivel * gasolina}`);
+            }
+            else {
+                gasolina *= 0.94;
+                console.log(`Abastecido ${quantidadeCombustivel} Litros de Gasolina
+                \n O valor a ser pago é de R$${quantidadeCombustivel * gasolina}`)}
+            break;
+    
+    }
 
 }
+
+
+

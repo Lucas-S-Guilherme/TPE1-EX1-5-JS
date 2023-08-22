@@ -1,10 +1,5 @@
-//Faça um script que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.
 
-let opcaoSemana = 2;
-
-DiaDaSemana(opcaoSemana);
-
-
+module.exports = DiaDaSemana; // permite exportar a função para outras
 function DiaDaSemana(opcao)
 {
     switch(opcao){
@@ -43,3 +38,4 @@ function DiaDaSemana(opcao)
 
 
 }
+
